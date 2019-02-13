@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<!-- 这个配置使全局的映射器启用或禁用缓存 -->
+		<setting name="cacheEnabled" value="true" />
+		<!-- 允许 JDBC 支持生成的键。需要适合的驱动。如果设置为 true 则这个设置强制生成的键被使用，尽管一些驱动拒绝兼容但仍然有效（比如 
+			Derby） -->
+		<setting name="useGeneratedKeys" value="true" />
+		<!-- 配置默认的执行器。SIMPLE 执行器没有什么特别之处。REUSE 执行器重用预处理语句。BATCH 执行器重用语句和批量更新 -->
+		<setting name="defaultExecutorType" value="REUSE" />
+		<!-- 全局启用或禁用延迟加载。当禁用时，所有关联对象都会即时加载。 -->
+		<setting name="lazyLoadingEnabled" value="true" />
+		<!-- false，当延迟加载时，按需加载对象属性（即访问对象中一个懒对象属性，不会加载对象中其他的懒对象属性） -->
+		<setting name="aggressiveLazyLoading" value="false" />
+		<!-- 设置超时时间，它决定驱动等待一个数据库响应的时间。 -->
+		<setting name="defaultStatementTimeout" value="25000" />
+	</settings>
+		
+	<typeAliases>
+		<typeAlias alias="VerificationCode" type="com.base.entity.VerificationCode" />
+		<typeAlias alias="GoTravelAgentsSub" type="com.base.entity.GoTravelAgentsSub" />
+		<typeAlias alias="GoAirportPosition" type="com.base.entity.GoAirportPosition" />
+		<typeAlias alias="GoTypePrizes" type="com.base.entity.GoTypePrizes" />
+		<typeAlias alias="GoTravelAgents" type="com.base.entity.GoTravelAgents" />
+		<typeAlias alias="GoServiceCountry" type="com.base.entity.GoServiceCountry" />
+		<typeAlias alias="GoTravelAgentsSub" type="com.base.entity.GoTravelAgentsSub" />
+		<typeAlias alias="GoOverseasInsurance" type="com.base.entity.GoOverseasInsurance" />
+		<typeAlias alias="QuestionnairePerson" type="com.base.entity.QuestionnairePerson" />
+		<typeAlias alias="Questionnaire" type="com.base.entity.Questionnaire" />
+		<typeAlias alias="Administrators" type="com.base.entity.Administrators" />
+		<typeAlias alias="GoBaseOrderInfo" type="com.base.entity.GoBaseOrderInfo" />
+		<typeAlias alias="GoTypeAwards" type="com.base.entity.GoTypeAwards" />
+		<typeAlias alias="GocmsAirport" type="com.base.entity.GocmsAirport" />
+		<typeAlias alias="GoOrderTravel" type="com.base.entity.GoOrderTravel" />
+		<typeAlias alias="GoGroupOrders" type="com.base.entity.GoGroupOrders" />
+		<typeAlias alias="GoTopContacts" type="com.base.entity.GoTopContacts" />
+		<typeAlias alias="GoBillNumber" type="com.base.entity.GoBillNumber" />
+		<typeAlias alias="GoEvisa" type="com.base.entity.GoEvisa" />
+		<typeAlias alias="GoSharePictures" type="com.base.entity.GoSharePictures" />
+		<typeAlias alias="NewsCollect" type="com.base.entity.NewsCollect" />
+		<typeAlias alias="NewsCommentLike" type="com.base.entity.NewsCommentLike" />
+		<typeAlias alias="NewsLike" type="com.base.entity.NewsLike" />	
+		<typeAlias alias="TheNew" type="com.base.entity.TheNew" />
+		<typeAlias alias="NewsProblem" type="com.base.entity.NewsProblem" />
+		<typeAlias alias="GoArrUser" type="com.base.entity.GoArrUser" />
+		<typeAlias alias="GoRace" type="com.base.entity.GoRace" />
+		<typeAlias alias="GoArriUser" type="com.base.entity.GoArriUser" />
+		<typeAlias alias="GoUser" type="com.base.entity.GoUser" />
+		<typeAlias alias="GoNationally" type="com.base.entity.GoNationally" />
+		<typeAlias alias="GoTicketphoto" type="com.base.entity.GoTicketphoto" />
+		<typeAlias alias="GoIdentiphoto" type="com.base.entity.GoIdentiphoto" />
+		<typeAlias alias="GoTravel" type="com.base.entity.GoTravel" />
+		<typeAlias alias="GoOrders" type="com.base.entity.GoOrders" />
+		<typeAlias alias="GoErders" type="com.base.entity.GoErders" />
+		<typeAlias alias="GoHotel" type="com.base.entity.GoHotel" />
+		<typeAlias alias="GoArrival" type="com.base.entity.GoArrival" />
+		<typeAlias alias="GoUserOrder" type="com.base.entity.GoUserOrder" />
+		<typeAlias alias="GoService" type="com.base.entity.GoService" />
+		<typeAlias alias="GoVisa" type="com.base.entity.GoVisa" />
+		<typeAlias alias="GoGroup" type="com.base.entity.GoGroup" />
+		<typeAlias alias="GoTourguide" type="com.base.entity.GoTourguide" />
+		<typeAlias alias="GaRestaurant" type="com.base.entity.GaRestaurant" />
+		<typeAlias alias="GarComment" type="com.base.entity.GarComment" />
+		<typeAlias alias="GarDintable" type="com.base.entity.GarDintable" />
+		<typeAlias alias="GarMenu" type="com.base.entity.GarMenu" />
+		<typeAlias alias="GarReply" type="com.base.entity.GarReply" />
+		<typeAlias alias="OccupCateg" type="com.base.entity.OccupCateg" />
+		<typeAlias alias="OccupCname" type="com.base.entity.OccupCname" />
+		<typeAlias alias="Cominfo" type="com.base.entity.Cominfo" />
+		<typeAlias alias="Comment" type="com.base.entity.Comment" />
+		<typeAlias alias="Reply" type="com.base.entity.Reply" />
+		<typeAlias alias="Label" type="com.base.entity.Label" />
+		<typeAlias alias="User" type="com.base.entity.User" />
+		<typeAlias alias="ReInfo" type="com.base.entity.ReInfo" />
+		<typeAlias alias="SubLabel" type="com.base.entity.SubLabel" />
+		<typeAlias alias="Newsinfo" type="com.base.entity.Newsinfo" />
+		<typeAlias alias="New_Country" type="com.base.entity.New_Country"/>
+		<typeAlias alias="Provincess" type="com.base.entity.Provincess" />
+		<typeAlias alias="TheCountry" type="com.base.entity.TheCountry" />
+		<typeAlias alias="TheState" type="com.base.entity.TheState" />
+		<typeAlias alias="TheCity" type="com.base.entity.TheCity" />
+		<typeAlias alias="Pro_city" type="com.base.entity.Pro_city" />
+		<typeAlias alias="SysUser" type="com.base.entity.SysUser" />
+		<typeAlias alias="travBao" type="com.base.entity.travBao" />
+		<typeAlias alias="CityPin" type="com.base.entity.CityPin" />
+		<typeAlias alias="Image" type="com.base.entity.Image" />
+		<typeAlias alias="A" type="com.base.entity.A" />
+		<typeAlias alias="AB" type="com.base.entity.AB" />
+	</typeAliases>
+	
+	
+</configuration>

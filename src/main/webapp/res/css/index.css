@@ -1,0 +1,578 @@
+/*首页css*/
+/*移动端*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+	body {
+		min-width: 320px;
+	}
+	.bigDiv {
+		width: 100%;
+		height: 200px;
+		background-color: black;
+		display: none;
+	}
+}
+/*平板端*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	body {
+		min-width: 768px;
+	}
+	.bigDiv {
+		width: 100%;
+		height: 200px;
+		background-color: red;
+		display: none;
+	}
+}
+/*PC端*/
+@media screen and (min-width:992px) {
+	html {
+		font-size: 10px;
+	}
+	body {
+		min-width: 1200px;
+	}
+	img {
+		vertical-align: middle;
+	}
+	.bigDiv {
+		width: 100%;
+		height: auto;
+		min-width: 1000px;
+		margin: 0 auto;
+		font-family: "微软雅黑";
+		background-color:;
+	}
+	.indexTop {
+		background: rgba(0, 0, 0, 0) url("../img/bannerBj.jpg") no-repeat scroll
+			center center;		
+		background-size: cover;
+		widows: 100%;
+		color: #fdfcfc;
+		height: 768px;
+		padding-bottom: 20px;
+		margin: 0 auto;
+		max-width: 100%;
+		overflow: hidden;
+	}
+	.indexTop .nav {
+		color: #fdfcfc;
+		height: 80px;
+		letter-spacing: 1px;
+		margin: 0 auto;
+		position: absolute;
+		width: 100%;
+	}
+	.indexTop .nav a {
+		color: #fdfcfc;
+		text-decoration: none;
+	}
+	.nav_conter {
+		width: 1000px;
+		height: 80px;
+		margin: 0 auto;
+	}
+	.nav_left {
+		float: left;
+	}
+	.nav_left a img {
+		margin-top: 15px;
+		float: left;
+	}
+	.nav_left a span {
+		color: #fff;
+		font-size: 1.6rem;
+		line-height: 80px;
+		margin-left: 0.5em;
+	}
+	.nav_right {
+		width: auto;
+		height: 80px;
+		float: right;
+	}
+}
+
+.nav_right li {
+	float: left;
+}
+
+.nav_right li a img {
+	margin-top:;
+}
+
+.borderNav {
+	background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+	border: 1px solid #a0a0a0;
+	border-radius: 10px;
+	color: #fdfcfc;
+	cursor: pointer;
+	font-family: Microsoft YaHei, Arial, SimSun, sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
+	width: 90px;
+}
+
+.borderNav:hover {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	color: #fdfcfc;
+	cursor: pointer;
+}
+
+.nav_right li a {
+	padding: 5px 10px;
+	font-size: 1.4rem;
+	margin-left: 35px;
+	color: #fff;
+	border-radius: 15px;
+	line-height: 80px;
+}
+
+/*banner*/
+.banner {
+	min-width: 1300px;
+	pointer-events: none;
+}
+
+/*内容*/
+/*初心.行动*/
+.indexMainTop {
+	width: 100%;
+	height: 120px;
+	padding: 0px 0;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.indexMainText {
+	width: 1000px;
+	height: 100px;
+	margin: 0px auto;
+}
+
+.indexMainText .bigTitle {
+	font-size: 4rem;
+	color: #666;
+	font-weight: 100;
+	font-family: "PingFangSC Light" !important;
+}
+
+.indexMainText .bigTitle span {
+	margin: 0 10px;
+}
+
+.indexMainText .smallTitle {
+	color: #f3482e;
+	line-height: 40px;
+	font-size: 1.6rem;
+}
+
+/*第一部分 儿童及青少年*/
+.indexMainFirst {
+	width: 100%;
+	height: 402px;
+	background-image: url(../img/conterFirst.jpg);
+	background-position: right center;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.childYoungFirst {
+	width: 1000px;
+	height: 301px;
+	margin: 0 auto;
+	padding-top: 101px;
+}
+
+.childYoungtextSizeFirst {
+	width: 330px;
+	height: 200px;
+	font-size: 1.6rem;
+}
+
+.childYoungTitleFirst {
+	font-size: 3rem;
+	color: #666666;
+	line-height: 30px;
+	line-height: 50px;
+}
+
+.childYoungsmallTitleFirst {
+	line-height: 30px;
+	padding-top: 30px;
+}
+
+.childYoungsmallTitleFirst span {
+	color: #f2482f;
+}
+
+/*第二部分 成人健身*/
+.indexMainSecond {
+	width: 100%;
+	height: 402px;
+	background-image: url(../img/conterSecond.jpg);
+	background-position: left center;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.childYoung {
+	width: 1000px;
+	height: 301px;
+	margin: 0 auto;
+	padding-top: 101px;
+}
+
+.childYoungtextSize {
+	width: 330px;
+	height: 200px;
+	font-size: 1.6rem;
+	float: right;
+}
+
+.childYoungTitle {
+	font-size: 3rem;
+	color: #666666;
+	line-height: 30px;
+	line-height: 50px;
+}
+
+.childYoungsmallTitle {
+	line-height: 30px;
+	padding-top: 30px;
+}
+
+.childYoungsmallTitle span {
+	color: #f2482f;
+}
+
+/*第三部分 儿童及青少年*/
+.indexMainTid {
+	width: 100%;
+	height: 402px;
+	background-image: url(../img/conterThird.jpg);
+	background-position: right center;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.childYoungTid {
+	width: 1000px;
+	height: 337px;
+	margin: 0 auto;
+	padding-top: 65px;
+}
+
+.childYoungtextSizeTid {
+	width: 330px;
+	height: 272px;
+	font-size: 1.6rem;
+}
+
+.childYoungTitleTid {
+	font-size: 3rem;
+	color: #666666;
+	line-height: 30px;
+	line-height: 50px;
+}
+
+.childYoungsmallTitleTid {
+	line-height: 30px;
+	padding-top: 30px;
+}
+
+.childYoungsmallTitleTid span {
+	color: #f2482f;
+}
+
+.childYoungsmallTitleTid a {
+	display: block;
+	width: 200px;
+	color: #f2482f;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 30px;
+	text-align: center;
+	border: 1px solid #bbbbbb;
+	border-radius: 20px;
+}
+
+/*第四部分 成人健身*/
+.indexMainFour {
+	width: 100%;
+	height: 402px;
+	background-image: url(../img/conterFour.jpg);
+	background-position: left center;
+	background-repeat: no-repeat;
+	/*border-bottom: 1px solid #EEEEEE;*/
+}
+
+.childYoungFour {
+	width: 1000px;
+	height: 301px;
+	margin: 0 auto;
+	padding-top: 101px;
+}
+
+.childYoungtextSizeFour {
+	width: 330px;
+	height: 200px;
+	font-size: 1.6rem;
+	float: right;
+}
+
+.childYoungTitleFour {
+	font-size: 3rem;
+	color: #666666;
+	line-height: 30px;
+	line-height: 50px;
+}
+
+.childYoungsmallTitleFour {
+	line-height: 30px;
+	padding-top: 30px;
+}
+
+.childYoungsmallTitleFour span {
+	color: #f2482f;
+}
+
+/*我们的运动项目*/
+.oursProject {
+	width: 100%;
+	height: auto;
+}
+/*我们的项目列表*/
+.oursList {
+	width: 1000px;
+	height: 1000px; /*background-color: pink;*/
+	margin: 0 auto;
+}
+
+.public_oursList {
+	float: left;
+	width: 500px;
+	height: 1000px;
+}
+
+.public_oursList img {
+	float: left;
+}
+
+/*我们的课程*/
+.oursCurriculum {
+	width: 100%;
+	height: 625px;
+	padding-top: 65px;
+	background-image: url(../img/keChengBj.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+.oursKcTitle {
+	font-size: 4rem;
+	text-align: center;
+}
+
+.oursKcTitleSmall {
+	font-size: 1.6rem;
+	text-align: center;
+	line-height: 45px;
+	padding-top: 10px;
+}
+
+.keChengList {
+	width: 900px;
+	height: 450px;
+	margin: 0 auto;
+}
+
+.keChengList ul {
+	width: 450px;
+	height: auto;
+	float: left;
+}
+
+.keChengList ul li {
+	margin-top: 30px;
+	background-image: url(../img/listStyle.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 35px;
+	margin-left: 150px;
+}
+
+.keChengList ul li:nth-of-type(1) {
+	margin-top: 30px;
+	background: none;
+	margin-left: 110px;
+}
+
+.keChengList ul li:nth-of-type(2) {
+	margin-top: 30px;
+}
+
+.keChengList ul li a {
+	color: #fff;
+	line-height: 30px;
+	font-size: 1.6rem;
+}
+
+.keChengList ul li:nth-of-type(1) a {
+	display: inline-block;
+	padding: 5px 30px;
+	background-color: #ff3333;
+	border-radius: 20px;
+}
+
+.keChengList ul li a:hover {
+	text-decoration: underline;
+}
+
+.keChengList ul li:nth-of-type(1) a:hover {
+	text-decoration: none;
+}
+
+.upImg {
+	text-align: center;
+	line-height: 50px;
+}
+
+.upImg img {
+	cursor: pointer;
+}
+
+/*预约*/
+.form {
+	width: 500px;
+	height: 330px;
+	margin: auto;
+	text-align:center;
+}
+
+.form h3 {
+	font-size: 4rem;
+	font-weight: 100;
+	text-align: center;
+	margin: auto;
+	line-height: 100px;
+	color: #333333;
+}
+
+.form .moveKnow {
+	font-size: 2rem;
+	text-align: center;
+	line-height: 40px;
+	color: #666;
+}
+
+.form .input {
+	width: 320px;
+	height: 45px;
+	text-indent: 1em;
+	border-radius: 10px;
+	border: 1px solid #e1e1e1;
+	font-size: 18px;
+	color: #444;
+}
+
+.form .input:nth-of-type(1) {
+	margin-top: 0px;
+}
+
+.form .input:nth-of-type(2) {
+	margin-top: 20px;
+}
+
+.form input:focus {
+	outline: none;
+}
+
+.yTime {
+	font-size: 1.6rem;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 40px;
+	color: #989898;
+	width:320px;
+	text-align: center;
+}
+
+.yTime input {
+	border-radius: 10px;
+	border: 1px solid #e1e1e1;
+	height: 30px;
+	width: 175px;
+	margin-left: 10px;
+	font-size: 1.6rem;
+}
+
+.textTime {
+	font-size: 1.6rem;
+	text-align: center;
+	margin-top: 20px;
+	line-height: 40px;
+	color: #484848;
+}
+
+.btn {
+	width: 150px !important;
+	height: 45px;
+	border-radius: 10px;
+	border: 1px solid #e1e1e1;
+	background-color: #ff3334;
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+/*底部*/
+.footerIndex {
+	width: 100%;
+	height: 208px;
+	background-image: url(../img/footerBj.png);
+	padding-top: 50px;
+}
+
+.footerConter {
+	width: 760px;
+	height: 130px;
+	margin: 0 auto;
+	color: #cbcbcb;
+	font-size: 1.4rem;
+}
+
+.footerConter ul {
+	width: 681px;
+	height: 130px;
+	float: left;
+}
+
+.footerConter ul li {
+	line-height: 30px;
+}
+
+.footerConter .weixin {
+	width: 79px;
+	height: auto;
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.footerConter p {
+	text-align: center;
+	margin-top: 30px;
+}
+
+@media only screen and (min-width: 1024px) and (max-width:1440px) {
+	.indexMainFirst,.indexMainSecond,.indexMainTid,.indexMainFour {
+		background-size: 62% 100%;
+	}
+}

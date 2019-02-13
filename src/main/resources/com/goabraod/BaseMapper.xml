@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goabraod.dao.BaseMapper" > 		
+		
+		<select id="getTotalByType_Country"  resultType="com.base.entity.A" parameterType="map">
+			SELECT  COUNT(${map.cloumnName}) a FROM ${map.tableName} WHERE newstype = #{map.newstype} 
+			<if test="map.newstype != '一带一路'">
+			 	 	  AND (
+					<if test="map.newscountry1 != ''">
+		 			 	 newscountry = #{map.newscountry1} OR
+		 			 </if>
+		 			 <if test="map.newscountry2 != ''">
+		 			 	 newscountry = #{map.newscountry2} OR
+		 			 </if>
+		 			 <if test="map.newscountry3 != ''">
+		 			 	 newscountry = #{map.newscountry3} OR
+		 			 </if>
+		 			 <if test="map.newscountry4 != ''">
+		 			 	 newscountry = #{map.newscountry4} OR
+		 			 </if>
+		 			 <if test="map.newscountry5 != ''">
+		 			 	 newscountry = #{map.newscountry5} OR 
+		 			 </if>
+					 newscountry = '999')
+			 	</if>
+		</select>
+		
+		<select id="getIsType"  resultType="com.base.entity.A" parameterType="map">
+			SELECT  COUNT(newsNo) a FROM inter_info WHERE newstype != "" AND newsSubtype != ""
+		 	<if test="map.newstypes == 'newsFrom'">
+ 			 	AND newsFrom LIKE CONCAT ('%',#{map.newstypeInfo},'%')
+ 			 </if>
+ 			 <if test="map.newstypes == 'newsHeadline'">
+ 			 	AND newsHeadline LIKE CONCAT ('%',#{map.newstypeInfo},'%')
+ 			 </if>
+ 			 <if test="map.newstypes == 'newsSubtype'">
+ 			 	AND newsSubtype LIKE CONCAT ('%',#{map.newstypeInfo},'%')
+ 			 </if>
+ 			 <if test="map.newstypes == 'newsNo'">
+ 			 	AND newsNo &gt;= #{map.newstypeInfo1} AND newsNo &lt;= #{map.newstypeInfo2}
+ 			 </if>
+		</select>
+		
+		<select id="getIsNoType"  resultType="com.base.entity.A" parameterType="map">
+			SELECT  COUNT(newsNo) a FROM inter_info WHERE (newstype = '' or newsSubtype = '')
+			<if test="map.newstypes == 'newsFrom'">
+ 			 	AND newsFrom LIKE CONCAT ('%',#{map.newstypeInfo},'%')
+ 			 </if>
+ 			 <if test="map.newstypes == 'newsHeadline'">
+ 			 	AND newsHeadline LIKE CONCAT ('%',#{map.newstypeInfo},'%')
+ 			 </if>
+ 			 <if test="map.newstypes == 'newsSubtype'">
+ 			 	AND newsSubtype LIKE CONCAT ('%',#{map.newstypeInfo},'%')
+ 			 </if>
+ 			 <if test="map.newstypes == 'newsNo'">
+ 			 	AND newsNo &gt;= #{map.newstypeInfo1} AND newsNo &lt;= #{map.newstypeInfo2}
+ 			 </if>;
+		</select>
+</mapper> 

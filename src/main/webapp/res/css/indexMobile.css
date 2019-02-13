@@ -1,0 +1,231 @@
+
+.link-btn{
+    font-size: 1.7rem;
+    padding: 0.2rem 1.2rem;
+    letter-spacing: 0.5rem;
+    border-radius: 30px;
+    background: rgba(204, 190, 187, 0.5);
+    color: #f3482e;
+}
+.submit-btn{
+    font-size: 1.875rem;
+    padding: 0.75rem 3rem;
+    background: none;
+    border:1px solid #f3482e;
+    border-radius: 0.6rem;
+    color: #f3482e;
+    letter-spacing: 1rem;
+    text-align: center;
+    text-indent: 1rem;
+}
+.section1-title{
+    font-size: 4rem;
+}
+.section1-subtitle{
+    font-size: 1.5rem;
+}
+.section2-title, .section3-title, .section4-title, .section5-title, .section6-orderForm-title{
+    font-size: 3rem;
+}
+.section1-intro, .section2-intro, .section3-intro, .section4-list, .section5-list{
+    font-size: 1.6rem;
+
+}
+.section1, .section2, .section3, .section4, .section5{
+    position: relative;
+    height: 65rem;
+}
+
+.section1{
+    background: url("../img/section1-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section2{
+    background: url("../img/section2-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section3{
+    background: url("../img/section3-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section4{
+    background: url("../img/section4-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section5{
+    background: url("../img/section5-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+.section1-title{
+    position: absolute;
+    top: 13%;
+
+    color: #fdfdfc;
+}
+.section1-subtitle{
+    position: absolute;
+    top: 23.74%;
+    color: #ebee00;
+}
+.section1-intro{
+    width: 84%;
+    position: absolute;
+    top: 29%;
+    font-size: 1.25rem;
+    color: #acacac;
+}
+.section1-btn{
+    position: absolute;
+    top: 40%;
+}
+
+.section2-title{
+    position: absolute;
+    top: 13%;
+    color: #fdfdfc;
+}
+.section2-intro{
+    position: absolute;
+    top: 23.74%;
+    color: #acacac;
+}
+.section2-slide{
+    position: absolute;
+    bottom: 3%;
+    width: 10rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.section2-slide span{
+    display: inline-block;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 3rem;
+    background: #f3482e;
+    margin-left: 4%;
+}
+
+.section3-title{
+    position: absolute;
+    top: 13%;
+    color: #fdfdfc;
+}
+.section3-intro{
+    position: absolute;
+    top: 23.74%;
+    color: #acacac;
+}
+.section3-btn{
+    position: absolute;
+    top: 36.5%;
+}
+
+
+.section4-title, .section5-title{
+    position: absolute;
+    top: 13%;
+    right: 0;
+    color: #fdfdfc;
+}
+.section4-subtitle, .section5-subtitle{
+    position: absolute;
+    top: 23.74%;
+    right: 0;
+    font-size: 1.875rem;
+    color: rgba(253, 253, 252, 0.71);
+}
+.section4-list, .section5-list{
+    position: absolute;
+    top: 41.7%;
+    right: 0;
+    color: rgba(253, 253, 252, 0.71);
+}
+.section4-list div, .section5-list div{
+    height: 4rem;
+}
+.section4-list-icon{
+    background: url("../img/pin-icon.png");
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section5-list-icon{
+    background: url("../img/pin-icon.png");
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section4-list-word, .section5-list-word{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.section6{
+    position: relative;
+}
+.section6-orderForm{
+    width: 100%;
+    height: 100%;
+    padding-top: 4rem;
+}
+.section6-orderForm-title{
+    text-align: center;
+}
+.section6-orderForm-subtitle{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    color: #cbcbcb;
+}
+.section6-orderForm-input{
+    height: 4rem;
+    font-size: 1.3rem;
+    position: relative;
+    border-bottom: 1px solid #cbcbcb;
+    line-height: 3.5rem;
+
+}
+.section6-orderForm-input .label{
+    float: left;
+    width: 25%
+}
+.section6-orderForm-input input{
+    float: left;
+    height: 3.5rem;
+    width: 75%;
+    border:none;
+    outline:none; 
+}
+.section6-orderForm-input-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.section6-orderForm-tips{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #cbcbcb;
+}
+.section6-orderForm-submitBtn{
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.section4-title,
+.section5-title,
+.section6-orderForm-title{
+    font-size: 2.8rem;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goabraod.dao.TravUserMapper" >
+	<!-- 根据用户名查询  -->
+	<select id="getLogin" resultType="SysUser" parameterType="String">
+		SELECT tu.id,tu.userName,tu.passWord,tu.telephoneNo,tu.trueName,tu.disableFlag,tu.type
+		FROM trav_user tu WHERE userName = #{userName};
+	</select>
+	<!-- 获取越南落地签批文 -->
+	<select id="getYOrderInfo" resultType="GoOrders" parameterType="map">
+		SELECT DISTINCT(go.goId),goName,goOrderInsuranceId,goOrderInsuranceUrl,goOrderSource,goOrderPersonNum,goOrderPersons,goOrderPayment,goOrderDiscount,goOrderIsDiscount,goOrderPassInfo,goOrderEntrance,goOrderStatus,
+		goOrderPayStatus,goOrderPrintStatus,goOrderIdPictrueUrl,goOrderPayTime,goOrderPayMethod,goOrderPhotoCode,gocreateTime,userId FROM go_orders go,go_erders ge,go_travel gt,go_order_travel got,go_flight gf 
+		WHERE got.goId=go.goId AND got.gvId=gt.gvId AND gt.gvFlightNum=gf.fgFgNo AND geId LIKE '0%07' AND go.goOrderDownloadStatus = #{map.goOrderDownloadStatus} AND INSTR(gf.fgArrAp,#{map.airport})>0 AND 
+		go.goOrderVisaTypeCode=#{map.goOrderVisaTypeCode} AND go.goOrderPayStatus='Y' AND go.goOrderPassInfo=#{map.goOrderPassInfo} ORDER BY gocreateTime DESC LIMIT #{map.pageStart},#{map.pageLimit};
+	</select>
+	<!-- 获取越南落地签批文数量 -->
+	<select id="getYOrderInfoSum" resultType="A" parameterType="map">
+		SELECT COUNT(DISTINCT(go.goId)) a FROM go_orders go,go_erders ge,go_travel gt,go_order_travel got,go_flight gf 
+		WHERE got.goId=go.goId AND got.gvId=gt.gvId AND gt.gvFlightNum=gf.fgFgNo AND geId LIKE '0%07' AND go.goOrderDownloadStatus = #{map.goOrderDownloadStatus} 
+		AND INSTR(gf.fgArrAp,#{map.airport})>0 AND go.goOrderVisaTypeCode=#{map.goOrderVisaTypeCode} AND go.goOrderPayStatus='Y' AND go.goOrderPassInfo=#{map.goOrderPassInfo};
+	</select>
+	<!-- 获取航班信息 -->
+	<select id="getFlightInfo" resultType="AB" parameterType="map">
+		SELECT gf.fgArrAp a,gf.fgTaTe b FROM go_flight gf WHERE gf.fgArrCou = #{map.fgArrCou} AND gf.fgFgNo = #{map.fgFgNo};
+	</select>
+	<!-- 写入下载状态 -->
+	<update id="updateDownloadStatus" parameterType="map">
+		UPDATE go_orders SET goOrderDownloadStatus = #{map.goOrderDownloadStatus} WHERE goId = #{map.goId}
+	</update>
+</mapper>   

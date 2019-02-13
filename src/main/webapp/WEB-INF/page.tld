@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>page</short-name>
+  	<uri>http://www.yeyoo.cn/page</uri>
+	<tag>
+		<name>default</name>
+		<tag-class>com.yeyoo.page.PageDefaultTag</tag-class>
+		<body-content>empty</body-content>
+		<description>分页初始化标签</description>
+		<attribute>
+			<name>urlPath</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>sort</name>
+		<tag-class>com.yeyoo.page.PageSortTag</tag-class>
+		<body-content>JSP</body-content>
+		<description>分页排序标签</description>
+		<attribute>
+			<name>sortValue</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>	
+	</tag>
+	
+	<tag>
+		<name>bar</name>
+		<tag-class>com.yeyoo.page.PageBarTag</tag-class>
+		<body-content>empty</body-content>
+		<description>分页下拉框标签</description>
+	</tag>
+</taglib>

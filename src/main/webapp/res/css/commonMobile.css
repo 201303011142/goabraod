@@ -1,0 +1,115 @@
+html, body{
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width:321px) and (max-width:375px){html{font-size:10px}}
+@media screen and (min-width:376px) and (max-width:414px){html{font-size:10px}}
+@media screen and (min-width:415px) and (max-width:639px){html{font-size:12px}}
+@media screen and (min-width:640px) and (max-width:719px){html{font-size:12px}}
+@media screen and (min-width:720px){html{font-size:16px}}
+@media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}
+@media screen and (min-width:800px)and (max-width:1199px){html{font-size:25px}}
+@media screen and (min-width:1200px){html{font-size:30px}}
+
+
+
+
+.public-container{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+}
+
+.public-header{
+    height: 6.625rem;
+    width: 100%;
+    background: #eef0f0;
+}
+
+.public-header > .public-container{
+    height: 100%;
+}
+.public-header-log,
+.public-header-btn{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.public-header-log{
+    position: relative;
+}
+.public-header-btn{
+    position: relative;
+}
+.public-header-log > img{
+    width: 70.5%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin:auto;
+}
+.public-header-btn > img{
+    width: 14.95%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+}
+.public-header-btn:hover > img{
+    cursor: pointer;
+}
+.public-footer{
+    border-top: 1px solid #eb452c;
+    height: 12rem;
+    width: 100%;
+    background: #eef0f0;
+    font-size: 0.7rem;
+}
+.public-footer > .public-container{
+    width: 95%;
+}
+.public-footer-contactInfo{
+    height: 50%;
+}
+.public-footer-contactInfo-tel{
+    width: 33.3333%;
+    float: left;
+    text-align: left;
+}
+.public-footer-contactInfo-email{
+    width: 33.3333%;
+    float: left;
+    text-align: center;
+}
+.public-footer-contactInfo-location{
+    width: 33.3333%;
+    float: left;
+    text-align: right;
+}
+.public-footer-contactInfo-tel > p, .public-footer-contactInfo-email > p, .public-footer-contactInfo-location > p{
+    padding-top: 19%;
+    color: #666666;
+}
+.public-footer-contactInfo-tel > p span, .public-footer-contactInfo-email > p span, .public-footer-contactInfo-location > p span{
+    color: #0066ff;
+}
+.public-footer-icon, .public-footer-copyright{
+    height: 12.5%;
+}
+
+.public-footer-icon {
+    color: #acacac;
+    font-size: larger;
+}
+.public-footer-icon img{
+    width: 0.8rem;
+    height: 0.7rem;
+}
+.public-footer-copyright{
+    color: #acacac;
+}
